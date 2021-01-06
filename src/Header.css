@@ -1,4 +1,35 @@
+element {
+  --main-color: #fdfe03;
+  --second-color: #80eafe;
+}
+
 .active {
-  color: red;
-  font-size: 20px;
+  margin-top: 90px;
+  color: var(--second-color);
+  font-size: 70px;
+  font-weight: 200;
+  transition: font-size 0.3s ease;
+
+  letter-spacing: 8px;
+}
+
+header {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 20vh;
+}
+
+span:nth-child(7) {
+  margin-top: 90px;
+}
+
+span {
+  font-size: 40px;
+}
+
+span:hover {
+  cursor: pointer;
 }

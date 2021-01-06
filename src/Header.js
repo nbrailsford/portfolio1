@@ -1,8 +1,17 @@
 import "./Header.css";
+import Name from "./Name";
 
-const name = document.querySelectorAll(".activeHover");
+function Header() {
+  return (
+    <header>
+      <Name></Name>
+    </header>
+  );
+}
 
-name.forEach((letter) => {
+const nameHover = document.querySelectorAll(".activeHover");
+
+nameHover.forEach((letter) => {
   letter.addEventListener("mouseenter", () => {
     removeActiveClasses();
     letter.classList.add("active");
@@ -10,23 +19,9 @@ name.forEach((letter) => {
 });
 
 function removeActiveClasses() {
-  name.forEach((panel) => {
-    panel.classList.remove("active");
+  nameHover.forEach((i) => {
+    i.classList.remove("active");
   });
-}
-
-function Header() {
-  return (
-    <div className="header">
-      <span className="active">N</span>
-      <span className="activeHover">A</span>
-      <span className="activeHover">T</span>
-      <span className="activeHover">H</span>
-      <span className="activeHover">A</span>
-      <span className="activeHover">N</span>
-      <p>from the header</p>
-    </div>
-  );
 }
 
 export default Header;
