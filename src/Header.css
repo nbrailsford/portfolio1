@@ -1,14 +1,8 @@
-element {
-  --main-color: #fdfe03;
-  --second-color: #80eafe;
-}
-
 .active {
   margin-top: 90px;
-  color: var(--second-color);
   font-size: 70px;
   font-weight: 200;
-  transition: font-size 0.3s ease;
+  transition: font-size 0.3s ease-in-out;
 
   letter-spacing: 8px;
 }
@@ -16,10 +10,18 @@ element {
 header {
   font-family: "Roboto", sans-serif;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 20vh;
+  height: 25vh;
+  background-color: #12383d;
+}
+
+p {
+  position: absolute;
+  font-family: "Roboto", sans-serif;
+  margin-top: 60px;
+  color: #f0924f;
 }
 
 span:nth-child(7) {
@@ -27,7 +29,9 @@ span:nth-child(7) {
 }
 
 span {
+  font-family: "Audiowide", cursive;
   font-size: 40px;
+  color: #f0924f;
 }
 
 span:hover {

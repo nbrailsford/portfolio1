@@ -4,7 +4,10 @@ import Name from "./Name";
 function Header() {
   return (
     <header>
-      <Name></Name>
+      <div>
+        <Name></Name>
+      </div>
+      <p>front-end web developer</p>
     </header>
   );
 }
@@ -19,8 +22,8 @@ nameHover.forEach((letter) => {
 });
 
 function removeActiveClasses() {
-  nameHover.forEach((i) => {
-    i.classList.remove("active");
+  nameHover.forEach((e) => {
+    e.classList.remove("active");
   });
 }
 

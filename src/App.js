@@ -1,9 +1,13 @@
 import "./App.css";
-
+import Header from "./Header";
+import Nav from "./Nav";
+import Projects from "./projects/projects";
 function App() {
   return (
     <div className="App">
-      <header className="App-header"></header>
+      <Header />
+      <Nav />
+      <Projects />
     </div>
   );
 }
